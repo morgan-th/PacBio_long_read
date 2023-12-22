@@ -1,0 +1,8 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --time=6:00:00
+#SBATCH --mem=20GB
+#SBATCH --job-name=skera
+
+skera split ../Yen_DGRP_L3/2_D09/m64219e_231217_003814.hifi_reads.bam \
+../MAS-Seq_Adapter_v1/mas16_primers.fasta ../Yen_DGRP_L3/DGRP_LIB01.skera.bam
